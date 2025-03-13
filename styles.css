@@ -8,10 +8,6 @@ body {
     text-align: center;
 }
 
-section {
-    margin-bottom: 50px; /* Adds space between sections */
-}
-
 /* Style the header */
 header {
     text-align: center; /* Center-align all content */
