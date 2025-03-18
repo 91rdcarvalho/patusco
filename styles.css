@@ -2,6 +2,10 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: #EDE1C5; /* Light beige */
+    background-image: url("Aberto.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
     color: #4A2E1D; /* Dark brown */
     margin: 0;
     padding: 0;
@@ -28,14 +32,14 @@ header {
 h1 {
     font-size: 50px;
     font-weight: bold;
-    color: #4A2E1D; /* Dark brown */
+    color: #ffffff; /* Dark brown */
     margin: 0;
 }
 
 /* Subtitle Styling */
 .subtitle {
     font-size: 18px;
-    color: #4A2E1D;
+    color: #f1f1f1;
     margin-top: 5px;
 }
 
@@ -43,10 +47,16 @@ h1 {
 h2 {
     font-size: 28px;
     font-weight: 600;
-    color: #4A2E1D;
+    color: #ffffff;
     border-bottom: 3px solid #242021;
     display: inline-block;
     padding-bottom: 5px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    position: absolute;
+    top: -100px; /* Moves title above the box */
+    left: 50%;
+    transform: translateX(-50%); /* Centers title */
 }
 
 /* Tables */
@@ -54,12 +64,12 @@ table {
     width: 100%;
     border-collapse: collapse;
     margin-top: 10px;
+    table-layout: fixed;
 }
 
 th, td {
     border: 10px solid #ddd;
-    padding: 12px;
-    text-align: left;
+    padding: 12px
 }
 
 th {
@@ -68,18 +78,31 @@ th {
     font-weight: bold;
 }
 
+
+th:first-child, td:first-child {
+    width: 80%; /* Left column takes 70% */
+    text-align: left;
+}
+
+th:last-child, td:last-child {
+    width: 20%; /* Right column takes 30% */
+    text-align: center;
+}
+
+
 tr:nth-child(even) {
     background-color: #F5F0E6;
 }
 
-#bebidas, #pratos {
+#bebidas, #pratos, #sobremesas, #snacks {
     width: 90%; /* Limit width to 90% of the page */
     max-width: 900px; /* Prevent sections from becoming too wide on large screens */
-    background-color: rgba(255, 255, 255, 0.8); /* Light opacity white */
+    background-color: rgba(255, 255, 255, 0.6); /* Light opacity white */
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 20px auto; /* Centers the sections */
+    margin: 120px auto 20px auto; /* Extra space above */
+    position: relative;
 }
 
 
@@ -87,10 +110,10 @@ tr:nth-child(even) {
 #menu-dia {
     width: 80%; /* Adjust width */
     max-width: 800px;
-    background-color: #333031; /* Dark brown */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark brown */
     color: white; /* White text for contrast */
     text-align: center;
-    padding: 15px 20px;
+    padding: 10px 0px;
     border-radius: 10px;
     font-size: 22px;
     font-weight: bold;
@@ -107,20 +130,20 @@ tr:nth-child(even) {
 /* Styling for individual items */
 .menu-item {
     font-weight: bold;
-    color: #e0d384; /* Gold color for emphasis */
+    color: #ede0c4; /* Gold color for emphasis */
 }
 
 /* Styling for the price */
 .menu-price {
     font-weight: bold;
-    color: #e5daad; /* Light gold */
+    color: #ede0c4; /* Light gold */
     font-size: 24px;
 }
 
 .menu-time {
     font-size: 14px;
     font-weight: normal;
-    margin-top: 5px;
+    margin-top: -10px;
     color: #c3c2be; /* Gold for a subtle highlight */
 }
 
@@ -128,6 +151,7 @@ tr:nth-child(even) {
 /* Navigation Menu  --------------------------------   */
 nav {
     padding: 10px 0;
+    background-color: #ede0c4;
     text-align: center;
     position: sticky;
     top: 0;
@@ -163,13 +187,13 @@ nav ul li a {
 .nav-line {
     width: 40%; /* Line width */
     height: 2px; /* Line thickness */
-    background-color: #4A2E1D; /* Dark brown */
+    background-color: #ede0c4; /* Dark brown */
     margin: 10px auto; /* Centers the line */
 }
 
 /* Hover effect */
 nav ul li a:hover {
-    background-color: #242021; /* Gold highlight on hover */
+    background-color: #232323; /* Gold highlight on hover */
     color: #ffffff; /* Dark text on hover */
 }
 
