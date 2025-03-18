@@ -332,23 +332,4 @@ html {
         margin-top: 20px;
     }
 
-    /* ✅ Mobile-Specific Background Fix */
-    body {
-        position: relative;
-        overflow-x: hidden;
-    }
-
-    body::before {
-        content: "";
-        position: fixed; /* Ensures background stays fixed */
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        background-image: url("Aberto.png");
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        z-index: -1; /* Ensures it stays behind all content */
-    }
 }
