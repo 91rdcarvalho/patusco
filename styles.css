@@ -78,9 +78,9 @@ h3 {
 
 /* Tables */
 table {
-    width: 100%;
+    width: 90%;
     border-collapse: collapse;
-    margin-top: 30px;
+    margin: 30px auto;
     table-layout: fixed;
 }
 
@@ -97,12 +97,12 @@ th {
 
 
 th:first-child, td:first-child {
-    width: 80%; /* Left column takes 70% */
+    width: 70%; /* Left column takes 70% */
     text-align: left;
 }
 
 th:last-child, td:last-child {
-    width: 20%; /* Right column takes 30% */
+    width: 30%; /* Right column takes 30% */
     text-align: center;
 }
 
@@ -118,7 +118,7 @@ tr:nth-child(even) {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    margin: 120px auto 20px auto; /* Extra space above */
+    margin: 120px auto; /* Extra space above */
     position: relative;
 }
 
@@ -139,8 +139,15 @@ tr:nth-child(even) {
 
 /* Special Styling for the Menu Description */
 .menu-description {
-    font-size: 20px;
+    font-size: clamp(12px, 4vw, 20px); /* Dynamically resizes between 16px and 20px */
     margin-top: 10px;
+    white-space: nowrap; /* Prevents text from breaking into multiple lines */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    width: 100%;
 }
 
 /* Styling for individual items */
@@ -240,5 +247,20 @@ html {
 
     h1 {
         font-size: 40px;
+    }
+
+    th, td {
+        border: 5px solid #ddd;
+        padding: 6px;
+        font-size: 12px;
+    }
+    #menu-dia {
+        width: 80%;
+    }
+    table {
+        margin: 10px 
+    }
+    h3 {
+        margin-top: 20px
     }
 }
