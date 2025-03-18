@@ -207,7 +207,7 @@ nav ul {
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents items from wrapping */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
-    padding-bottom: 10px; /* Space to avoid cut-off */
+    padding: 10px; /* Space to avoid cut-off */
 }
 
 nav ul::-webkit-scrollbar {
@@ -243,10 +243,66 @@ nav ul li a:hover {
 }
 
 
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px; /* Space between elements */
+}
+
+/* Instagram Section */
+.instagram-container {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Space between icon and text */
+    text-decoration: none;
+    color: white; 
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Social Icons */
+.social-icon {
+    width: 30px; /* Adjust size */
+    height: auto;
+}
+
+/* Phone Container */
+.phone-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white; 
+    font-size: 14px;
+}
+
+/* Phone Icon */
+.phone-icon {
+    width: 24px; /* Adjust size */
+    height: auto;
+}
+
+
+
+
+
+
+
+
+
 /* Smooth Scrolling */
 html {
     scroll-behavior: smooth;
 }
+
+
+
+
+
+
+
+
 
 /* Responsive Design */
 @media (max-width: 600px) {
@@ -263,13 +319,36 @@ html {
         padding: 6px;
         font-size: 12px;
     }
+    
     #menu-dia {
         width: 80%;
     }
+
     table {
-        margin: 10px 
+        margin: 10px;
     }
+
     h3 {
-        margin-top: 20px
+        margin-top: 20px;
+    }
+
+    /* ✅ Mobile-Specific Background Fix */
+    body {
+        position: relative;
+        overflow-x: hidden;
+    }
+
+    body::before {
+        content: "";
+        position: fixed; /* Ensures background stays fixed */
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-image: url("Aberto.png");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1; /* Ensures it stays behind all content */
     }
 }
