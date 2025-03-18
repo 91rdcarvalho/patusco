@@ -203,6 +203,15 @@ nav ul {
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
+
+    overflow-x: auto; /* Enables horizontal scrolling */
+    white-space: nowrap; /* Prevents items from wrapping */
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    padding-bottom: 10px; /* Space to avoid cut-off */
+}
+
+nav ul::-webkit-scrollbar {
+    display: none; /* Hides scrollbar for a cleaner look */
 }
 
 /* Style for each menu link */
