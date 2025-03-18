@@ -1,15 +1,16 @@
 /* General Page Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #EDE1C5; /* Light beige */
+    background-color: #ffffff; /* Light beige */
     background-image: url("Aberto.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     color: #4A2E1D; /* Dark brown */
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     text-align: center;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400; /* Regular */
 }
 
 /* Style the header */
@@ -30,8 +31,11 @@ header {
 
 /* Title Styling */
 h1 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 50px;
-    font-weight: bold;
     color: #ffffff; /* Dark brown */
     margin: 0;
 }
@@ -45,25 +49,38 @@ h1 {
 
 /* Titles */
 h2 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
     font-size: 28px;
     font-weight: 600;
     color: #ffffff;
-    border-bottom: 3px solid #242021;
+    border-bottom: 3px solid #ede0c4;
     display: inline-block;
     padding-bottom: 5px;
     padding: 10px 15px;
-    border-radius: 10px;
     position: absolute;
     top: -100px; /* Moves title above the box */
     left: 50%;
     transform: translateX(-50%); /* Centers title */
 }
 
+h3 {
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300; /* Light weight */
+    font-size: 22px;
+    text-transform: uppercase; /* Optional: Makes text uppercase */
+    letter-spacing: 1px; /* Optional: Adds slight spacing */
+    margin-bottom: 0px; /* Ensures spacing between h3 and table */
+    margin-top: 40px; /* Adds more space above h3 */
+}
+
 /* Tables */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-top: 10px;
+    margin-top: 30px;
     table-layout: fixed;
 }
 
@@ -108,15 +125,14 @@ tr:nth-child(even) {
 
 /* Menú do Dia Section */
 #menu-dia {
-    width: 80%; /* Adjust width */
+    width: 50%; /* Adjust width */
     max-width: 800px;
     background-color: rgba(0, 0, 0, 0.5); /* Dark brown */
     color: white; /* White text for contrast */
     text-align: center;
-    padding: 10px 0px;
+    padding: 10px 10px;
     border-radius: 10px;
     font-size: 22px;
-    font-weight: bold;
     margin: 20px auto; /* Center the section */
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -131,6 +147,10 @@ tr:nth-child(even) {
 .menu-item {
     font-weight: bold;
     color: #ede0c4; /* Gold color for emphasis */
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Styling for the price */
@@ -138,20 +158,25 @@ tr:nth-child(even) {
     font-weight: bold;
     color: #ede0c4; /* Light gold */
     font-size: 24px;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 .menu-time {
     font-size: 14px;
-    font-weight: normal;
     margin-top: -10px;
     color: #c3c2be; /* Gold for a subtle highlight */
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400; /* Regular */
 }
 
 
 /* Navigation Menu  --------------------------------   */
 nav {
     padding: 10px 0;
-    background-color: #ede0c4;
+    background-color: rgb(237, 224, 196, 0.6);
     text-align: center;
     position: sticky;
     top: 0;
@@ -167,6 +192,10 @@ nav ul {
     padding: 0;
     display: flex;
     justify-content: center;
+    font-family: 'Barlow Condensed', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
 }
 
 /* Style for each menu link */
