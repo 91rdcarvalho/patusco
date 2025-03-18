@@ -243,28 +243,39 @@ nav ul li a:hover {
 }
 
 
+/* Footer Section */
+footer {
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    margin-top: 30px;
+}
 
+/* Footer Content */
 .footer-content {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 20px; /* Space between elements */
+    gap: 15px; /* Space between elements */
+    flex-wrap: wrap; /* Ensures items wrap if needed on smaller screens */
 }
 
 /* Instagram Section */
 .instagram-container {
     display: flex;
     align-items: center;
-    gap: 10px; /* Space between icon and text */
+    gap: 8px; /* Adjust spacing */
     text-decoration: none;
-    color: white; 
-    font-size: 14px;
+    color: white; /* Removes blue color */
+    font-size: 16px; /* Adjusts text size */
     font-weight: bold;
 }
 
-/* Social Icons */
+/* Social Icon (Instagram) */
 .social-icon {
-    width: 30px; /* Adjust size */
+    width: 25px; /* Adjust for mobile */
     height: auto;
 }
 
@@ -272,15 +283,21 @@ nav ul li a:hover {
 .phone-container {
     display: flex;
     align-items: center;
-    gap: 10px;
-    color: white; 
-    font-size: 14px;
+    gap: 8px;
+    color: white;
+    font-size: 16px; /* Adjust font size */
 }
 
 /* Phone Icon */
 .phone-icon {
-    width: 24px; /* Adjust size */
+    width: 22px; /* Adjust for mobile */
     height: auto;
+}
+
+/* Remove Default Link Colors */
+.footer-content a {
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensures white text */
 }
 
 
