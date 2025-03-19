@@ -183,6 +183,9 @@ tr:nth-child(even) {
 
 /* Navigation Menu  --------------------------------   */
 nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 10px 0;
     background-color: rgb(237, 224, 196, 0.8);
     text-align: center;
@@ -192,23 +195,35 @@ nav {
     z-index: 1000;
 }
 
+/* Logo inside the navigation */
+.nav-logo {
+    margin-left: 15px; /* Space on the left */
+    padding: 5px 10px; /* Padding above and below */
+}
+
+.nav-logo img {
+    height: 40px; /* Adjusts height to fit menu */
+    width: auto; /* Keeps aspect ratio */
+    object-fit: contain;
+    border-radius: 50%;
+}
+
 
 /* Style for the menu items */
 nav ul {
     list-style: none;
     margin: 0;
-    padding: 0;
     display: flex;
     justify-content: center;
     font-family: 'Barlow Condensed', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 1px;
-
     overflow-x: auto; /* Enables horizontal scrolling */
     white-space: nowrap; /* Prevents items from wrapping */
     -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
     padding: 10px; /* Space to avoid cut-off */
+    line-height: 1.5px;
 }
 
 nav ul::-webkit-scrollbar {
@@ -242,12 +257,6 @@ nav ul li a {
     transition: 0.3s;
 }
 
-.nav-line {
-    width: 40%; /* Line width */
-    height: 2px; /* Line thickness */
-    background-color: #ede0c4; /* Dark brown */
-    margin: 10px auto; /* Centers the line */
-}
 
 /* Hover effect */
 nav ul li a:hover {
@@ -370,7 +379,8 @@ html {
     nav ul {
         flex-wrap: wrap; /* Items will wrap to a new line */
         justify-content: center; /* Centers items */
-        line-height: 2;
+        line-height: 1.5;
+        padding: 2px;
     }
     nav ul li {
         margin: 0 0px;
