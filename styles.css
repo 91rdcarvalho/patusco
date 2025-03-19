@@ -394,15 +394,14 @@ html {
     }
 
     .nav-logo {
-        margin-left: 15px; /* Space on the left */
-        padding: 5px 10px; /* Padding above and below */
+        margin-left: 10px; /* Adjust margin */
+        padding: 3px 5px; /* Reduce padding */
     }
     
     .nav-logo img {
-        height: 40px; /* Adjusts height to fit menu */
-        width: auto; /* Keeps aspect ratio */
-        object-fit: contain;
+        height: 30px !important; /* Smaller logo on mobile */
+        width: 30px !important; /* Ensures a perfect circle */
+        object-fit: cover; /* Ensures correct display */
         border-radius: 50%;
     }
-
 }
