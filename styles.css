@@ -370,6 +370,7 @@ html {
     nav ul {
         flex-wrap: wrap; /* Items will wrap to a new line */
         justify-content: center; /* Centers items */
+        line-height: 2;
     }
     nav ul li {
         margin: 0 0px;
