@@ -111,7 +111,7 @@ tr:nth-child(even) {
     background-color: #F5F0E6;
 }
 
-#bebidas, #pratos, #sobremesas, #snacks {
+#bebidas, #pratos, #sobremesas, #snacks, #cafetaria {
     width: 90%; /* Limit width to 90% of the page */
     max-width: 900px; /* Prevent sections from becoming too wide on large screens */
     background-color: rgba(255, 255, 255, 0.6); /* Light opacity white */
@@ -366,6 +366,10 @@ html {
         background-position: center; /* Aligns the tiles from the top-left */
         background-repeat: repeat; /* Enables the mosaic effect */
         background-attachment: fixed; /* Keeps background fixed on scroll */
+    }
+    nav ul {
+        flex-wrap: wrap; /* Items will wrap to a new line */
+        justify-content: center; /* Centers items */
     }
     nav ul li {
         margin: 0 0px;
